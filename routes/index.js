@@ -1,6 +1,3 @@
-module.exports= function(io){ 
-
-
 const express = require('express');
 
 const router = express.Router();
@@ -38,9 +35,8 @@ router.post('/tweets', function(req, res) {
     res.redirect('/');
   });
 
-  return router;
-};
-
+  
+module.exports= router
   
 
 

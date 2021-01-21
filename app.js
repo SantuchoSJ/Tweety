@@ -13,7 +13,7 @@ app.engine('html', nunjucks.render); // cuando le den archivos html a res.render
 nunjucks.configure('views'); // apunta a nunjucks al directorio correcto para los templates
 
 app.use(morgan('tiny'))
-app.use('/', routes(io));
+app.use('/', routes);
 
 
 
